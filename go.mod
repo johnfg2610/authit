@@ -1,4 +1,4 @@
-module github.com/johnfg10/authit
+module github.com/johnfg2610/authit
 
 go 1.15
 
