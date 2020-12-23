@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/johnfg10/authit/logs/mock_logs"
+	"github.com/johnfg10/authit/pkg/logs/mock_logs"
 )
 
 type TestStruct struct {

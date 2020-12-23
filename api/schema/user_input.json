@@ -1,0 +1,88 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://github.com/johnfg10/authit/api/schema/user_input.json",
+    "type": "object",
+    "title": "User",
+    "description": "The root schema of the user object",
+    "default": {},
+    "examples": [
+        {
+            "preferred_username": "Jeff",
+            "username": "tim",
+            "email": "jo@jo.com",
+            "first_name": "Jeff",
+            "family_name": "Gunderson",
+            "date_of_birth": "2012-04-23T18:25:43.511Z"
+        }
+    ],
+    "required": [
+        "id",
+        "preferred_username",
+        "email",
+        "date_of_birth",
+        "created_at"
+    ],
+    "properties": {
+        "preferred_username": {
+            "$id": "#/properties/preferred_username",
+            "type": "string",
+            "title": "preferred_username",
+            "description": "The perferred username as selected by the user, this should be displayed as provided",
+            "default": "",
+            "examples": [
+                "Jeff"
+            ]
+        },
+        "username": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "email",
+            "description": "An optional field specifiying the users username",
+            "default": "",
+            "examples": [
+                "tim"
+            ]
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "email",
+            "description": "An optional field specifiying the users email address",
+            "default": "",
+            "examples": [
+                "jo@jo.com"
+            ]
+        },
+        "first_name": {
+            "$id": "#/properties/first_name",
+            "type": "string",
+            "title": "first_name",
+            "description": "An optional field specifying the users first name",
+            "default": "",
+            "examples": [
+                "Jeff"
+            ]
+        },
+        "family_name": {
+            "$id": "#/properties/family_name",
+            "type": "string",
+            "title": "family_name",
+            "description": "An optional field specifying the users family name",
+            "default": "",
+            "examples": [
+                "Gunderson"
+            ]
+        },
+        "date_of_birth": {
+            "$id": "#/properties/date_of_birth",
+            "type": "string",
+            "title": "date_of_birth",
+            "description": "An optional field specifying the users date of birth",
+            "default": "",
+            "examples": [
+                "2018-08-23T00:00:00.000Z"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
