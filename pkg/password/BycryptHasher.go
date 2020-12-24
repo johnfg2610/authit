@@ -10,7 +10,7 @@ type BcryptHasher struct {
 }
 
 //NewBcryptHasher creates a new default instance of the bcrypt password hasher using the default cost, this can be changed later and the algorithm should handle this.
-func NewBcryptHasher() BcryptHasher {
+func NewBcryptHasher() Hasher {
 	return BcryptHasher{
 		Cost: bcrypt.DefaultCost,
 	}
