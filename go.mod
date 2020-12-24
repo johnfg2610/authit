@@ -6,6 +6,7 @@ require (
 	github.com/99designs/gqlgen v0.13.0 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/golang/mock v1.4.4
+	github.com/google/uuid v1.1.2
 	github.com/google/wire v0.4.0
 	github.com/labstack/echo v3.3.10+incompatible // indirect
 	github.com/labstack/echo/v4 v4.1.17 // indirect
